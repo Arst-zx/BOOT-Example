@@ -9,15 +9,24 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
 
-// 声明BeanName为/myController，使用BeanNameUrlHandlerMapping注册这个Handler
+/**
+ * 声明 BeanName 为 /myController，使用 BeanNameUrlHandlerMapping 注册这个 Handler
+ * @author zhangx511
+ */
 @Component("/myController")
 public class MyController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        // model数据支持使用Map类型
+
+        /**
+         * model数据支持使用Map类型
+         */
         Map<String, Object> model = new HashMap<>(2);
         model.put("name", "Guangshan");
-        // 返回视图mycontroller，视图绑定的数据为model
+
+        /**
+         * 返回视图mycontroller，视图绑定的数据为model
+         */
         return new ModelAndView("defaultView", model);
     }
 }
