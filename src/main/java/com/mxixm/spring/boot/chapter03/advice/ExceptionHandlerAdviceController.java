@@ -3,6 +3,10 @@ package com.mxixm.spring.boot.chapter03.advice;
 import com.mxixm.spring.boot.chapter03.entity.MyData;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 
 // 定义RESTful控制器，所有处理器方法均按照@ResponseBody返回
 @RestController
