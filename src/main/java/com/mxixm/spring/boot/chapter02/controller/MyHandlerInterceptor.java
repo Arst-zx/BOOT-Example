@@ -7,7 +7,10 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-// 实现HandlerInterceptor接口
+/**
+ * 实现 HandlerInterceptor 接口
+ * @author zhangx511
+ */
 public class MyHandlerInterceptor implements HandlerInterceptor {
 
     /**
