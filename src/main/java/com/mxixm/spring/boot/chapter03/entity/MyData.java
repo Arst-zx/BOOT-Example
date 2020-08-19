@@ -2,8 +2,12 @@ package com.mxixm.spring.boot.chapter03.entity;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-// 测试的数据定义
-@XmlRootElement // 标记该类型可被转换为XML
+/**
+ * 测试的数据定义
+ * 标记该类型可被转换为XML
+ * @author zhangx511
+ */
+@XmlRootElement
 public class MyData {
 
     private String firstName;
