@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
+/**
+ * @author zhangx511
+ */
 @Controller
 @SessionAttributes("from")
 public class ModelAttributeResolveController {
@@ -24,16 +27,25 @@ public class ModelAttributeResolveController {
         MyData myData = new MyData();
         myData.setFirstName("Guang");
         myData.setLastName("shan");
-        // 设置model中from属性值，因为存在@SessionAttributes("from")，随后该值会被设置到Session中
+
+        /**
+         * 设置model中from属性值，因为存在@SessionAttributes("from")，随后该值会被设置到Session中
+         */
         model.addAttribute("from", myData);
         return "defaultView";
     }
 
     @GetMapping("sessionAttributes")
     public String sessionAttributes(@ModelAttribute("from") MyData myData, SessionStatus sessionStatus) {
-        // 可以取到sessionAttributesFrom请求中设置的from的值
+
+        /**
+         * 可以取到sessionAttributesFrom请求中设置的from的值
+         */
         System.out.println(myData);
-        // 标记完成，清除session中的值
+
+        /**
+         * 标记完成，清除session中的值
+         */
         sessionStatus.setComplete();
         return "defaultView";
     }

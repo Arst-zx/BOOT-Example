@@ -3,13 +3,19 @@ package com.mxixm.spring.boot.chapter03.entity;
 import javax.validation.constraints.Min;
 import javax.xml.bind.annotation.XmlType;
 
-// 测试的数据定义
-@XmlType // 标记该类型可通过XML序列化与反序列化
+/**
+ * 测试的数据定义
+ * @author zhangx511
+ * 标记该类型可通过XML序列化与反序列化
+ */
+@XmlType
 public class MyPostData {
 
     private String name;
 
-    // 校验最小值为0，即不能为负数
+    /**
+     * 校验最小值为0，即不能为负数
+     */
     @Min(0)
     private Integer age;
 
