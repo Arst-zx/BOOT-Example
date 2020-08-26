@@ -12,15 +12,25 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdvice;
 import java.io.IOException;
 import java.lang.reflect.Type;
 
-// 定义为控制器增强器
+/**
+ * 定义为控制器增强器
+ * @author zhangx511
+ */
 @ControllerAdvice
-// 定义一个Bean，接口RequestBodyAdvice可用类RequestBodyAdviceAdapter代替
+
+/**
+ * 定义一个Bean，接口RequestBodyAdvice可用类RequestBodyAdviceAdapter代替
+ * @author zhangx511
+ */
 @Component
 public class MyRequestBodyAdvice implements RequestBodyAdvice {
 
     @Override
     public boolean supports(MethodParameter methodParameter, Type targetType, Class<? extends HttpMessageConverter<?>> converterType) {
-        // 只支持MyData类型增强
+
+        /**
+         * 只支持MyData类型增强
+         */
         return methodParameter.getParameterType() == MyData.class;
     }
 
@@ -31,9 +41,15 @@ public class MyRequestBodyAdvice implements RequestBodyAdvice {
 
     @Override
     public Object afterBodyRead(Object body, HttpInputMessage inputMessage, MethodParameter parameter, Type targetType, Class<? extends HttpMessageConverter<?>> converterType) {
-        // 根据firstName与lastName设置fullName属性
+
+        /**
+         * 根据firstName与lastName设置fullName属性
+         */
         MyData myData = (MyData) body;
-        // 可以在@RequestBody中获取fullName属性
+
+        /**
+         * 可以在@RequestBody中获取fullName属性
+         */
         myData.setFullName(myData.getFirstName() + myData.getLastName());
         return myData;
     }

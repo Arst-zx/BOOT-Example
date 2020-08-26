@@ -19,6 +19,7 @@ public class ModelAttributeResolveController {
 
     @RequestMapping("modelAttribute/{name}")
     public String modelAttribute(@ModelAttribute PersonData data) {
+        System.out.println(data.getName());
         return "defaultView";
     }
 

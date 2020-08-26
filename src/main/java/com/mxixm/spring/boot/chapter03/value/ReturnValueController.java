@@ -12,6 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author zhangx511
+ */
 @Controller
 public class ReturnValueController {
 
@@ -21,7 +24,9 @@ public class ReturnValueController {
         return getMyData();
     }
 
-    // 获取测试数据
+    /**
+     * 获取测试数据
+     */
     private MyData getMyData() {
         MyData myData = new MyData();
         myData.setFirstName("Guang");
@@ -55,7 +60,10 @@ public class ReturnValueController {
     public ModelAndView modelAndViewReturn() {
         Map<String, Object> model = new HashMap<>(2);
         model.put("name", "返回ModelAndView");
-        // 返回ModelAndView，第一个参数是视图名，第二个参数是模型，第三个参数指定返回状态码404
+
+        /**
+         * 返回ModelAndView，第一个参数是视图名，第二个参数是模型，第三个参数指定返回状态码404
+         */
         return new ModelAndView("defaultView", model, HttpStatus.NOT_FOUND);
     }
 

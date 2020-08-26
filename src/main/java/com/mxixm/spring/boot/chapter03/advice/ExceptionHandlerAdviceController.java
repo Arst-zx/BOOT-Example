@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-// 定义RESTful控制器，所有处理器方法均按照@ResponseBody返回
+/**
+ * 定义RESTful控制器，所有处理器方法均按照@ResponseBody返回
+ * @author zhangx511
+ */
 @RestController
 public class ExceptionHandlerAdviceController {
 
@@ -24,7 +27,9 @@ public class ExceptionHandlerAdviceController {
         throw new Exception("Test Exception");
     }
 
-    // 指定响应状态码为500
+    /**
+     * 指定响应状态码为500
+     */
     @ResponseStatus(code = HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(RuntimeException.class)
     public String exceptionHandlerStatus(Exception e) {
@@ -34,7 +39,10 @@ public class ExceptionHandlerAdviceController {
 
     @GetMapping("exceptionHandlerStatus")
     public int exceptionHandlerStatus() {
-        // 抛出异常，除数不能为0，为RuntimeException的子类
+
+        /**
+         * 抛出异常，除数不能为0，为RuntimeException的子类
+         */
         int result = 1 / 0;
         return result;
     }

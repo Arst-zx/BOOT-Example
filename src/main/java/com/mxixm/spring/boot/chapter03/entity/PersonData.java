@@ -3,18 +3,39 @@ package com.mxixm.spring.boot.chapter03.entity;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author zhangx511
+ */
 public class PersonData {
-    // 简单属性
+
+    /**
+     * 简单属性
+     */
     private String name;
-    // 嵌套属性
+
+    /**
+     * 嵌套属性
+     */
     private Nested nested;
-    // 数组属性
+
+    /**
+     * 数组属性
+     */
     private String[] hobbies;
-    // List属性
+
+    /**
+     * List属性
+     */
     private List<String> things;
-    // Map属性
+
+    /**
+     * Map属性
+     */
     private Map<String, String> properties;
-    // Map中嵌套Nested属性
+
+    /**
+     * Map中嵌套Nested属性
+     */
     private Map<String, Nested> nestedProperties;
 
     public String getName() {
@@ -64,9 +85,15 @@ public class PersonData {
     public void setNestedProperties(Map<String, Nested> nestedProperties) {
         this.nestedProperties = nestedProperties;
     }
-    // 嵌套类型
+
+    /**
+     * 嵌套类型
+     */
     public static class Nested {
-        // 嵌套的name
+
+        /**
+         * 嵌套的name
+         */
         private String name;
 
         public String getName() {
