@@ -5,11 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
 import org.springframework.web.servlet.handler.SimpleServletHandlerAdapter;
 import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
-
 import java.util.Collections;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  * 声明为 Spring 的配置类
  */
 @Configuration

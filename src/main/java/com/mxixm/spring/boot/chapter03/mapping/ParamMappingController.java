@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class ParamMappingController {

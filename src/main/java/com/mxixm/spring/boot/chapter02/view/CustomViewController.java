@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.View;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class CustomViewController {

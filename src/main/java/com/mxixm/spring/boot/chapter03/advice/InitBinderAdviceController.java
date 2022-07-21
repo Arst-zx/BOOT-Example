@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * 定义RESTful控制器，所有处理器方法均按照@ResponseBody返回
- * @author zhangx511
+ * @author 章鑫
  */
 @RestController
 public class InitBinderAdviceController {

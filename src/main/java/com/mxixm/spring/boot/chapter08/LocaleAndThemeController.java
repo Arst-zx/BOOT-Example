@@ -3,12 +3,14 @@ package com.mxixm.spring.boot.chapter08;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.support.RequestContextUtils;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * @author 章鑫
+ */
 @Controller
 public class LocaleAndThemeController {
 

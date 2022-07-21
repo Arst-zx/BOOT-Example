@@ -6,13 +6,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 @SessionAttributes("name")
@@ -67,7 +66,7 @@ public class MyModelBinding {
         model.put("name", "ModelAndView类型");
 
         /**
-         * 6.返回ModelAndView，第一个参数是视图名，第二个参数是模型
+         * 5.返回ModelAndView，第一个参数是视图名，第二个参数是模型
          */
         return new ModelAndView("defaultView", model);
     }

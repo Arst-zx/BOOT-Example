@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class ModelAttributeAdviceController {

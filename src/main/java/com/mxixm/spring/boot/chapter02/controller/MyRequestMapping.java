@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * 声明为 Controller 控制器 Bean，该 Bean 中被注解 @RequestMapping 标记的方法会被 RequestMappingHandlerMapping 扫描并包装为 HandlerMethod
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class MyRequestMapping {
@@ -16,7 +16,7 @@ public class MyRequestMapping {
      * 映射 URL 为 /myRequestMapping，支持 GET 类型的请求
      * @param name
      * @param model
-     * @return
+     * @return String
      */
     @RequestMapping(path = "/myRequestMapping", method = RequestMethod.GET)
     public String requestMappingGet(String name, Map<String, Object> model) {

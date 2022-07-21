@@ -2,10 +2,12 @@ package com.mxixm.spring.boot.chapter05;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author 章鑫
+ */
 @SpringBootApplication
 public class ApplicationBuilderApp {
 

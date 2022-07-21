@@ -10,7 +10,7 @@ import org.springframework.web.method.HandlerMethod;
 
 /**
  * 只对MyControllerAdviceController类型应用增强器
- * @author zhangx511
+ * @author 章鑫
  */
 @ControllerAdvice(assignableTypes = MyControllerAdviceController.class)
 public class MyControllerAdvice {

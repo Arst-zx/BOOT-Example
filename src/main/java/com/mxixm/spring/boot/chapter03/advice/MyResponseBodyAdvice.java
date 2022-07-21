@@ -11,9 +11,16 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-// 定义为控制器增强器
+/**
+ * 定义为控制器增强器
+ * @author 章鑫
+ */
 @ControllerAdvice
-// 定义一个Bean
+
+/**
+ * 定义一个Bean，接口RequestBodyAdvice可用类RequestBodyAdviceAdapter代替
+ * @author 章鑫
+ */
 @Component
 public class MyResponseBodyAdvice implements ResponseBodyAdvice<MyData> {
 
@@ -25,7 +32,9 @@ public class MyResponseBodyAdvice implements ResponseBodyAdvice<MyData> {
     @Nullable
     @Override
     public MyData beforeBodyWrite(@Nullable MyData body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
-        // 根据firstName与lastName设置fullName属性，把fullName返回到响应体中
+        /**
+         * 根据firstName与lastName设置fullName属性，把fullName返回到响应体中
+         */
         body.setFullName(body.getFirstName() + body.getLastName());
         return body;
     }

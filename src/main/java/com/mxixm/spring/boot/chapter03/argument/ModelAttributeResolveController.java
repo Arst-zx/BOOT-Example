@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 @SessionAttributes("from")

@@ -3,9 +3,11 @@ package com.mxixm.spring.boot.chapter04;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.context.request.async.DeferredResult;
-
 import java.util.concurrent.Callable;
 
+/**
+ * @author 章鑫
+ */
 @Controller
 public class MyAsyncController {
 

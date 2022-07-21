@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class MediaTypeMappingController {

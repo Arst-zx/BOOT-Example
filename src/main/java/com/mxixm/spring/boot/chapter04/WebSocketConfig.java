@@ -6,8 +6,14 @@ import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
 import org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor;
 
+/**
+ * @author 章鑫
+ */
 @Configuration
-// 通过该注解表示开启WebSocket功能
+
+/**
+ * 通过该注解表示开启WebSocket功能
+ */
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
 

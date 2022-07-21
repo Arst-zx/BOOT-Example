@@ -6,7 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-// 用于调试的启动器，在这里添加的启动器不会查找到其他包中的组件
+/**
+ * 用于调试的启动器，在这里添加的启动器不会查找到其他包中的组件
+ * @author 章鑫
+ */
 @SpringBootApplication
 @Controller
 public class DebuggerStarter {

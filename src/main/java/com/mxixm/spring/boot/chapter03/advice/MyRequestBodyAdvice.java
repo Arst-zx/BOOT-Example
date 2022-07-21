@@ -8,19 +8,18 @@ import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdvice;
-
 import java.io.IOException;
 import java.lang.reflect.Type;
 
 /**
  * 定义为控制器增强器
- * @author zhangx511
+ * @author 章鑫
  */
 @ControllerAdvice
 
 /**
  * 定义一个Bean，接口RequestBodyAdvice可用类RequestBodyAdviceAdapter代替
- * @author zhangx511
+ * @author 章鑫
  */
 @Component
 public class MyRequestBodyAdvice implements RequestBodyAdvice {

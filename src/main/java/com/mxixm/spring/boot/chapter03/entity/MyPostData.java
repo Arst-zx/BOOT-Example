@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 测试的数据定义
- * @author zhangx511
+ * @author 章鑫
  * 标记该类型可通过XML序列化与反序列化
  */
 @XmlType

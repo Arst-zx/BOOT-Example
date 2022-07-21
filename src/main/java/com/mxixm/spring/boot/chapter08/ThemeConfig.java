@@ -4,7 +4,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.ThemeResolver;
 import org.springframework.web.servlet.theme.SessionThemeResolver;
 
-//@Configuration
+/**
+ * @author 章鑫
+ */
 public class ThemeConfig {
 
     @Bean

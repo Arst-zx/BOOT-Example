@@ -4,14 +4,13 @@ import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.View;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
  * 声明为Bean，BeanName为beanNameViewBean
- * @author zhangx511
+ * @author 章鑫
  */
 @Component("beanNameViewBean")
 public class CustomView implements View {

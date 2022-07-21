@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class MyBodyController {

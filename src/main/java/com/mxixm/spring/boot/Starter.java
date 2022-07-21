@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  * 声明为 Spring Boot 应用，项目以此类为基础进行配置
  */
 @SpringBootApplication

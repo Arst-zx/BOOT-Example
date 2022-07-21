@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 @RequestMapping

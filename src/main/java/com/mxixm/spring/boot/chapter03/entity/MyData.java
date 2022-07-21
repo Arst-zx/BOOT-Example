@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * 测试的数据定义
  * 标记该类型可被转换为XML
- * @author zhangx511
+ * @author 章鑫
  */
 @XmlRootElement
 public class MyData {

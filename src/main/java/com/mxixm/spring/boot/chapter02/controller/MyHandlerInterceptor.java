@@ -3,13 +3,12 @@ package com.mxixm.spring.boot.chapter02.controller;
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
  * 实现 HandlerInterceptor 接口
- * @author zhangx511
+ * @author 章鑫
  */
 public class MyHandlerInterceptor implements HandlerInterceptor {
 

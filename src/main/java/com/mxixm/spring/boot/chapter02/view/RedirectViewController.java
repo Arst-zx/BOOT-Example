@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 /**
- * @author zhangx511
+ * @author 章鑫
  */
 @Controller
 public class RedirectViewController {
